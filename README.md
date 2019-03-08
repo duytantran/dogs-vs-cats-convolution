@@ -12,4 +12,5 @@ The CNN model, step by step:
 * Step 3: Flattening
 * Step 4: Full Connection
 
-This can also be applied to more general problems, for instance classifying different brain tumors. 
+This can also be applied to more general problems, for instance classifying different brain tumors.  
+As a final note, we can of course use R to build a CNN with the H2O package, with the framework Deep Water. However, this framework is still in the early stages, and it is advisable to use Python for Deep Learning with their amazing libraries.
