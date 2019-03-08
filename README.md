@@ -3,6 +3,9 @@ We are given a huge dataset, which can be found from Kaggle, with dog and cat pi
 
 Since we have a binary outcome, we use the sigmoid function and binary cross-entropy loss function. If there are more than 2 outcomes, use softmax and categorial cross-entropy loss function. Used the Keras documentation a lot: https://keras.io/ . Especially the ImageDataGenerator, under Image Preprocessing, to avoid overfitting. Recommended to use as guideline!
 
+Started with a single convolutional layer, which gave an accuray ~75%. This was immensely improved after adding a second one, which gave an accuracy of 85% for the training set and 82% for the test set! The accuracy can of course be increased by adding more layers, and/or increasing the target_size and input_shape dimensions. In my case, I used 64, but if you have a GPU and a lot of coffee, go for it!
+BEWARE: the input_shape parameter is only run once in the Convolution2D function. 
+
 The CNN model, step by step:
 * Step 1: Convolution
 * Step 2: Max Pooling
